@@ -12,6 +12,10 @@ mongoose.connect(process.env.MONGODB_URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
+
+app.get('/',(req,res)=>{
+    res.send('app connecttttttttt')
+})
 //apis
 app.use('/',require('./routes/register'))
 app.use('/', require('./routes/login'))
