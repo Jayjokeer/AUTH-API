@@ -10,3 +10,5 @@ const loginController = async(req,res)=>{
         const founduser = await userDB.find()
     }
 }
+
+module.exports= loginController
