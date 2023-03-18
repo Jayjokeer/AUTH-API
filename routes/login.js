@@ -10,6 +10,6 @@ router.post('/user/login',loginController,(req,res)=>{
 
 })
 router.get('/user/protect',authenticateToken,(req,res,)=>{
-    res.json({message:'access granted'})
+    res.json({message:'access granted' })
 })
 module.exports=router
