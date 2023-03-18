@@ -27,7 +27,8 @@ function authenticateToken(req,res,next){
     if(bearerToken==null) return res.sendStatus(401)
     jwt.verify(bearerToken,process.env.ACCESS_TOKEN_SECRET,(err,user)=>{
         if(err) res.sendStatus(401)
-        req.user= user
+       req.user= user
+       
         next()
     })
 }
