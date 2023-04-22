@@ -20,6 +20,8 @@ app.get('/',(req,res)=>{
 app.use('/',require('./routes/register'))
 app.use('/', require('./routes/login'))
 
+
+
 app.listen(process.env.PORT,()=>{
     console.log('app running')
 })
