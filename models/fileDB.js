@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose =require ('mongoose')
 
 const fileSchema = new mongoose.Schema({
     name:{
@@ -8,7 +8,7 @@ const fileSchema = new mongoose.Schema({
     image:{
         data:Buffer,
         contentType:String
-    },
+    }
 })
 
 module.exports = mongoose.model('fileDB',fileSchema)
